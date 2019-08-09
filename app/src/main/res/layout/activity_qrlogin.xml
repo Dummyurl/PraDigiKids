@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_selector_section"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.pratham.pradigikids.custom.buttons.IndieFlowerButton
+            android:id="@+id/btn_Reset"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/button_blue_selector"
+            android:text="Reset Camera"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8.5"
+            android:orientation="vertical"
+            android:weightSum="6"
+            tools:ignore="NestedWeights">
+
+            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/light_orange"
+                android:gravity="center"
+                android:text="STUDENTS"
+                android:textColor="@color/simple_white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                android:id="@+id/tv_stud_one"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/button"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                android:id="@+id/tv_stud_two"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/button"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                android:id="@+id/tv_stud_three"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/button"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                android:id="@+id/tv_stud_four"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/button"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                android:id="@+id/tv_stud_five"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/button"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <com.pratham.pradigikids.custom.buttons.IndieFlowerButton
+            android:id="@+id/btn_Start"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1.5"
+            android:background="@drawable/button_orange_selector"
+            android:text="Start"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</LinearLayout>

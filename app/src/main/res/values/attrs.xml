@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FoldingCell">
+        <attr name="backSideColor" format="color" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="additionalFlipsCount" format="integer" />
+        <attr name="cameraHeight" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ChipCloud">
+        <attr name="deselectedColor" format="color" />
+        <attr name="deselectedFontColor" format="color" />
+        <attr name="selectedColor" format="color" />
+        <attr name="selectedFontColor" format="color" />
+        <attr name="selectTransitionMS" format="integer" />
+        <attr name="deselectTransitionMS" format="integer" />
+        <attr name="selectMode">
+            <enum name="single" value="0" />
+            <enum name="multi" value="1" />
+            <enum name="required" value="2" />
+            <enum name="none" value="3" />
+        </attr>
+        <attr name="gravity">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="center" value="2" />
+            <enum name="staggered" value="3" />
+        </attr>
+        <attr name="typeface" format="string" />
+        <attr name="allCaps" format="boolean" />
+        <attr name="textSize" format="dimension" />
+        <attr name="labels" format="reference" />
+        <attr name="minHorizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CarouselPicker">
+        <attr name="items_visible" />
+    </declare-styleable>
+    <attr name="items_visible" format="enum">
+        <enum name="three" value="3" />
+        <enum name="five" value="5" />
+        <enum name="seven" value="7" />
+    </attr>
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorNormal" format="color" />
+        <attr name="fab_colorPressed" format="color" />
+        <attr name="fab_colorDisabled" format="color" />
+        <attr name="fab_colorRipple" format="color" />
+        <attr name="fab_showShadow" format="boolean" />
+        <attr name="fab_shadowColor" format="color" />
+        <attr name="fab_shadowRadius" format="dimension" />
+        <attr name="fab_shadowXOffset" format="dimension" />
+        <attr name="fab_shadowYOffset" format="dimension" />
+        <attr name="srcCompat" format="reference" />
+        <attr name="fab_size" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
+        </attr>
+        <attr name="fab_showAnimation" format="reference" />
+        <attr name="fab_hideAnimation" format="reference" />
+        <attr name="fab_label" format="string" />
+        <attr name="fab_elevationCompat" format="dimension" />
+        <attr name="fab_progress_color" format="color" />
+        <attr name="fab_progress_backgroundColor" format="color" />
+        <attr name="fab_progress_indeterminate" format="boolean" />
+        <attr name="fab_progress_max" format="integer" />
+        <attr name="fab_progress" format="integer" />
+        <attr name="fab_progress_showBackground" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="EasyVideoPlayer">
+        <attr name="evp_source" format="string" />
+        <attr name="evp_leftAction" format="enum">
+            <enum name="none" value="0" />
+            <enum name="restart" value="1" />
+            <enum name="retry" value="2" />
+        </attr>
+        <attr name="evp_rightAction" format="enum">
+            <enum name="none" value="3" />
+            <enum name="submit" value="4" />
+            <enum name="customLabel" value="5" />
+        </attr>
+        <attr name="evp_customLabelText" format="string" />
+        <attr name="evp_retryText" format="string" />
+        <attr name="evp_submitText" format="string" />
+        <attr name="evp_bottomText" format="string" />
+        <attr name="evp_restartDrawable" format="reference" />
+        <attr name="evp_playDrawable" format="reference" />
+        <attr name="evp_pauseDrawable" format="reference" />
+        <attr name="evp_hideControlsOnPlay" format="boolean" />
+        <attr name="evp_autoPlay" format="boolean" />
+        <attr name="evp_disableControls" format="boolean" />
+        <attr name="evp_themeColor" format="color" />
+        <attr name="evp_autoFullscreen" format="boolean" />
+        <attr name="evp_loop" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="Rotate3dAnimation">
+        <attr name="rollType" format="enum">
+            <enum name="x" value="0" />
+            <enum name="y" value="1" />
+            <enum name="z" value="2" />
+        </attr>
+        <attr name="fromDeg" format="float" />
+        <attr name="toDeg" format="float" />
+        <attr name="pivotX" format="fraction" />
+        <attr name="pivotY" format="fraction" />
+    </declare-styleable>
+    <declare-styleable name="ShapeOfView">
+        <attr name="shape_clip_drawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="RoundRectView">
+        <attr name="shape_roundRect_topLeftRadius" format="dimension" />
+        <attr name="shape_roundRect_topRightRadius" format="dimension" />
+        <attr name="shape_roundRect_bottomLeftRadius" format="dimension" />
+        <attr name="shape_roundRect_bottomRightRadius" format="dimension" />
+        <attr name="shape_roundRect_borderWidth" format="dimension" />
+        <attr name="shape_roundRect_borderColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TabDigit">
+        <attr name="digit_textSize" format="dimension" />
+        <attr name="padding" format="dimension" />
+        <attr name="cornerSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ShadowContainer">
+        <attr name="sc_shadowColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="NotificationBadge">
+        <attr name="android:textSize" />
+        <attr name="android:textColor" />
+        <attr name="nbBackground" format="reference" />
+        <attr name="nbAnimationEnabled" format="boolean" />
+        <attr name="nbAnimationDuration" format="integer" />
+        <attr name="nbMaxTextLength" format="integer" />
+        <attr name="nbEllipsizeText" format="string" />
+    </declare-styleable>
+    <!-- CircularImageView for custom shape -->
+    <declare-styleable name="CircularImageView">
+        <!-- Specifies whether or not to draw a circular border around the image. -->
+        <attr name="border" format="boolean" />
+        <!-- Specifies the color of the border draw around the image. (if enabled) -->
+        <attr name="border_color" format="color" />
+        <!-- Makes the border this pixels wide. (if enabled) -->
+        <attr name="border_width" format="dimension" />
+        <!-- Specifies whether or not to draw a selector on this view upon touch events. -->
+        <attr name="selector" format="boolean" />
+        <!-- Specifies the color of the selector draw on top of the image upon touch events. (if enabled) -->
+        <attr name="selector_color" format="color" />
+        <!-- Specifies the color of the selector stroke drawn around the image upon touch events. Be sure to provide some opacity. (if enabled) -->
+        <attr name="selector_stroke_color" format="color" />
+        <!-- Makes the selector stroke drawn around the image upon touch events this pixels wide. (if enabled) -->
+        <attr name="selector_stroke_width" format="dimension" />
+        <!-- Specifies whether or not to draw a shadow around your circular image. -->
+        <attr name="shadow" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomCircularImageViewTheme">
+        <attr name="circularImageViewStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer" />
+        <attr name="progress_max" format="integer" />
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_offset" format="dimension" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="PlayerControlView">
+        <attr name="pcv_show_timeout_ms" format="integer" />
+        <attr name="pcv_fast_rewind_ms" format="integer" />
+        <attr name="pcv_fast_forward_ms" format="integer" />
+        <attr name="pcv_always_show" format="boolean" />
+    </declare-styleable>
+    <attr name="superBottomSheet_dim" format="float" />
+    <attr name="superBottomSheet_backgroundColor" format="color" />
+    <attr name="superBottomSheet_cornerRadius" format="dimension" />
+    <attr name="superBottomSheet_animateCornerRadius" format="boolean" />
+    <attr name="superBottomSheet_animateStatusBar" format="boolean" />
+    <attr name="superBottomSheet_alwaysExpanded" format="boolean" />
+    <attr name="superBottomSheet_cancelableOnTouchOutside" format="boolean" />
+    <attr name="superBottomSheet_cancelable" format="boolean" />
+    <attr name="superBottomSheet_statusBarColor" format="color" />
+    <attr name="superBottomSheet_peekHeight" format="dimension" />
+    <declare-styleable name="LineProgressBar">
+        <attr name="lineprogressColor" format="color" />
+        <attr name="progressDescColor" format="color" />
+        <attr name="progressRadius" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="lineborderWidth" format="dimension" />
+        <attr name="progressDesc" format="string" />
+        <attr name="isShowDesc" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ElasticView">
+        <attr name="flexibility" format="float" />
+    </declare-styleable>
+    <declare-styleable name="PerseiLayout">
+        <attr name="menu_height" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ScalingLayout">
+        <attr name="radiusFactor" format="float" />
+    </declare-styleable>
+    <declare-styleable name="ProgressLayout">
+        <attr name="c_progressColor" format="color" />
+        <attr name="c_progressDescColor" format="color" />
+        <attr name="c_progressRadius" format="dimension" />
+        <attr name="c_max" format="integer" />
+        <attr name="c_progress" format="integer" />
+        <attr name="c_borderWidth" format="dimension" />
+        <attr name="c_progressDesc" format="string" />
+        <attr name="c_isShowDesc" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="advDrawerLayout">
+        <attr name="adl_customBehavior" format="boolean" />
+        <attr name="adl_viewScale" format="float" />
+        <attr name="adl_viewScrimColor" format="color" />
+        <attr name="adl_viewElevation" format="dimension" />
+        <attr name="adl_drawerElevation" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="BlurLayout">
+        <attr name="blk_downscaleFactor" format="float" />
+        <attr name="blk_blurRadius" format="integer" />
+        <attr name="blk_fps" format="integer" />
+        <attr name="blk_cornerRadius" format="dimension" />
+        <attr name="blk_alpha" format="float" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pratham.pradigikids.custom.CircularRevelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/circular_group_reveal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/att_bkgd">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/img_att_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_att_back" />
+
+        <com.pratham.pradigikids.custom.buttons.IndieFlowerButton
+            android:id="@+id/btn_group_next"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/button_orange_selector"
+            android:elevation="@dimen/_10sdp"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+</com.pratham.pradigikids.custom.CircularRevelLayout>

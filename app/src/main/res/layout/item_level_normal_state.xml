@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_30sdp"
+    android:background="#A77D82">
+
+    <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+        android:id="@+id/level_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableRight="@drawable/ic_breadcrumb_arrow"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_3sdp"
+        android:textColor="@color/white" />
+</RelativeLayout>

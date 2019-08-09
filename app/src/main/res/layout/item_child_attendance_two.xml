@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="@dimen/_100sdp"
+    android:clickable="true"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/card_avatar"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_30sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/child_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+    </android.support.design.card.MaterialCardView>
+
+    <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+        android:id="@+id/child_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:elevation="@dimen/_10sdp"
+        android:gravity="center"
+        android:maxWidth="@dimen/_100sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:text="sdkjfskdfjsdsmsnaksjkasj"
+        android:textColor="@color/black_20" />
+
+</android.support.design.card.MaterialCardView>

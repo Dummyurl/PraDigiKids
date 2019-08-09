@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/_100sdp"
+    android:layout_marginTop="@dimen/_30sdp"
+    android:layout_marginRight="@dimen/_100sdp"
+    android:layout_marginBottom="@dimen/_30sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardUseCompatPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow_sand"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rl_star"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="star_success.json"
+                app:lottie_loop="true" />
+        </LinearLayout>
+
+        <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_star"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Great...!!!"
+            android:textColor="#D91043"
+            android:textSize="@dimen/_25sdp" />
+
+        <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Do you want to continue..?"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_18sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                android:id="@+id/txt_next"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_3sdp"
+                android:layout_weight=".5"
+                android:background="@drawable/dialog_next_round_btn"
+                android:gravity="center"
+                android:text="Yes"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_25sdp" />
+
+            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                android:id="@+id/txt_close"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_3sdp"
+                android:layout_weight=".5"
+                android:background="@drawable/dialog_close_round_btn"
+                android:gravity="center"
+                android:text="No"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_25sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.design.card.MaterialCardView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="@dimen/_200sdp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:foregroundGravity="center"
+    app:cardBackgroundColor="@color/light_blue"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/a1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/ic_storage" />
+
+
+        <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+            android:id="@+id/txt_download_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/a1"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="@string/content_download_alert"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/_17sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center">
+
+            <com.pratham.pradigikids.custom.buttons.IndieFlowerButton
+                android:id="@+id/btn_okay"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/update_button_round_bg"
+                android:elevation="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="@string/Okay"
+                android:textColor="@android:color/white" />
+
+            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                android:id="@+id/btn_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="@string/change"
+                android:textColor="@color/purple"
+                android:textSize="@dimen/_18sdp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.design.card.MaterialCardView>

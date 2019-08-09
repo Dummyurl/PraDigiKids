@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pratham.pradigikids.custom.BlurPopupDialog.ShadowContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_200sdp"
+    android:layout_height="@dimen/_200sdp"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:sc_shadowColor="#40444444">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/push_lottie"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_margin="@dimen/_12sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="push_error.json"
+        app:lottie_loop="true" />
+
+    <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+        android:id="@+id/txt_push_dialog_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="Please wait, pushing Data..."
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="@dimen/_12sdp" />
+
+    <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+        android:id="@+id/txt_push_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Check your wifi is connected to Pratham Kolibri !"
+        android:textColor="@color/charcoal"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone" />
+</com.pratham.pradigikids.custom.BlurPopupDialog.ShadowContainer>

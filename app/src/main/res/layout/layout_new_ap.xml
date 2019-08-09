@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/_90sdp"
+    android:orientation="vertical">
+
+    <com.pratham.pradigikids.custom.CircularImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:src="@drawable/superman_1"
+        app:border="true"
+        app:border_color="@color/white"
+        app:shadow="true" />
+
+    <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+        android:id="@+id/apName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="device"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp" />
+
+</LinearLayout>

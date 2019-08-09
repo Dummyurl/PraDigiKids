@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/controls_background"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:layout_gravity="bottom"
+    android:background="#D7AD49"
+    android:orientation="horizontal">
+
+    <com.pratham.pradigikids.custom.media_controller.PausePlayButton
+        android:id="@+id/pause_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:background="@android:color/transparent" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:elevation="@dimen/_15sdp"
+        android:progressDrawable="@drawable/video_seekbar_style"
+        android:splitTrack="false"
+        android:thumb="@drawable/video_custom_thumb"
+        tools:progress="80" />
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/current_time_text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="4dp"-->
+    <!--android:paddingRight="4dp"-->
+    <!--android:text="00:00"-->
+    <!--android:textColor="#ffffffff"-->
+    <!--android:textStyle="bold"-->
+    <!--android:visibility="gone" />-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/total_time_text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="4dp"-->
+    <!--android:paddingRight="4dp"-->
+    <!--android:text="00:00"-->
+    <!--android:textColor="#ffffffff"-->
+    <!--android:textStyle="bold"-->
+    <!--android:visibility="gone" />-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

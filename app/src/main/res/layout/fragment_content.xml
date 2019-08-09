@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pratham.pradigikids.custom.CircularRevelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/circular_content_reveal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/frag_content_bkgd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/april">
+
+        <include layout="@layout/layout_network_error" />
+        <!--this explicit margin is given, if in case upper views are gone, the list should not be distorted-->
+        <com.pratham.pradigikids.custom.GridRecyclerView
+            android:id="@+id/rv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:columnWidth="@dimen/_130sdp"
+            android:layoutAnimation="@anim/grid_layout_animation_from_bottom"
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                android:id="@+id/txt_wifi_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:text="No connection" />
+
+            <ImageView
+                android:id="@+id/iv_wifi_status"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_no_wifi" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_level"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp" />
+
+    </RelativeLayout>
+</com.pratham.pradigikids.custom.CircularRevelLayout>

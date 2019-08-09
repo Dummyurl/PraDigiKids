@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PraDigi Kids</string>
+    <string name="child_name">Name</string>
+    <string name="share">Share</string>
+    <string name="recieve">Receive</string>
+    <string name="age_3to7">Age 3-7</string>
+    <string name="age_8to14">Age 8-14</string>
+    <string name="pref_key_transition_time">pref_key_transition_time</string>
+    <string name="download">Download</string>
+    <string name="new_version_available">For more features and a better user experience, please upgrade this app.</string>
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="fcm_message">Pratham</string>
+    <string name="retry">Retry</string>
+    <string name="Open">Open</string>
+    <string name="downloading">Downloading...</string>
+    <string-array name="search_tags">
+        <item>English</item>
+        <item>Maths</item>
+        <item>Games</item>
+        <item>Science</item>
+        <item>Dekho or Seekho</item>
+    </string-array>
+    <string-array name="main_contents">
+        <item>Age 3–6\nKhelbadi</item>
+        <item>Age 6–10\nKhelpuri</item>
+        <item>Age 8–14\nDekho Aur Sikho</item>
+    </string-array>
+    <string-array name="languages">
+        <item>English</item>
+        <item>हिंदी</item>
+        <item>मराठी</item>
+        <item>ಕನ್ನಡ</item>
+        <item>తెలుగు</item>
+        <item>বাংলা</item>
+        <item>ગુજરાતી</item>
+        <item>ਪੰਜਾਬੀ</item>
+        <item>தமிழ்</item>
+        <item>অসমীয়</item>
+        <item>ଓଡ଼ିଆ</item>
+        <item>उर्दू</item>
+        <!--<item>മലയാളം</item>-->
+    </string-array>
+    <string-array name="main_languages">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Marathi</item>
+        <item>Kannada</item>
+        <item>Telugu</item>
+        <item>Bengali</item>
+        <item>Gujarati</item>
+        <item>Punjabi</item>
+        <item>Tamil</item>
+        <item>Assamese</item>
+        <item>Odiya</item>
+        <item>Urdu</item>
+        <!--<item>Malayalam</item>-->
+    </string-array>
+    <string-array name="default_preview">
+        <item>#df5a55</item>
+        <item>#f9bb72</item>
+        <item>#76afcf</item>
+        <item>#dd6495</item>
+        <item>#72d3b4</item>
+    </string-array>
+    <string-array name="avatars">
+        <item>avatars/dino_dance.json</item>
+        <item>avatars/green_monster.json</item>
+        <item>avatars/yoga_girl.json</item>
+        <item>avatars/sushi_fitness.json</item>
+        <item>avatars/rabbit.json</item>
+        <item>avatars/funky_chicken.json</item>
+        <item>avatars/techno_penguin.json</item>
+        <item>avatars/halloween.json</item>
+        <item>avatars/acrobatics.json</item>
+    </string-array>
+    <string-array name="student_class">
+        <item>Class 1</item>
+        <item>Class 2</item>
+        <item>Class 3</item>
+        <item>Class 4</item>
+        <item>Class 5</item>
+        <item>Class 6</item>
+        <item>Class 7</item>
+        <item>Class 8</item>
+        <item>Class 9</item>
+        <item>Class 10</item>
+        <item>Class 12</item>
+    </string-array>
+    <string-array name="age">
+        <item>Age 3</item>
+        <item>Age 4</item>
+        <item>Age 5</item>
+        <item>Age 6</item>
+        <item>Age 7</item>
+        <item>Age 8</item>
+        <item>Age 9</item>
+        <item>Age 10</item>
+        <item>Age 11</item>
+        <item>Age 12</item>
+        <item>Age 13</item>
+        <item>Age 14</item>
+        <item>Age 15</item>
+        <item>Age 16</item>
+        <item>Age 17</item>
+        <item>Age 18</item>
+    </string-array>
+
+    <string-array name="india_states">
+        <item>SELECT STATE</item>
+        <item>Andhra Pradesh(AP)</item>
+        <item>Arunachal Pradesh(AR)</item>
+        <item>Assam(AS)</item>
+        <item>Bihar(BR)</item>
+        <item>Chhattisgarh(CG)</item>
+        <item>Goa(GO)</item>
+        <item>Gujarat(GJ)</item>
+        <item>Haryana(HR)</item>
+        <item>Himachal Pradesh(HP)</item>
+        <item>Jammu and kashmir(JK)</item>
+        <item>Jharkhand(JH)</item>
+        <item>Karnataka(KN)</item>
+        <item>Kerala(KL)</item>
+        <item>Madhya Pradesh(MP)</item>
+        <item>Maharashtra(MH)</item>
+        <item>Manipur(MN)</item>
+        <item>Meghalaya(MG)</item>
+        <item>Mizoram(MZ)</item>
+        <item>Nagaland(NG)</item>
+        <item>Orissa(OD)</item>
+        <item>Punjab(PB)</item>
+        <item>Rajasthan(RJ)</item>
+        <item>Sikkim(SK)</item>
+        <item>Tamil Nadu(TN)</item>
+        <item>Telangana(TS)</item>
+        <item>Tripura(TR)</item>
+        <item>Uttarakhand(UK)</item>
+        <item>Uttar Pradesh(UP)</item>
+        <item>West Bengal(WB)</item>
+        <item>Andaman and Nicobar Islands(AN)</item>
+        <item>Chandigarh(CH)</item>
+        <item>Dadra and Nagar Haveli(DN)</item>
+        <item>Daman and Diu(DD)</item>
+        <item>Delhi(DL)</item>
+        <item>Lakshadweep(LD)</item>
+        <item>Pondicherry(PY)</item>
+    </string-array>
+    <string-array name="india_states_shortcode">
+        <item>SELECT STATE</item>
+        <item>AP</item>
+        <item>AR</item>
+        <item>AS</item>
+        <item>BR</item>
+        <item>CG</item>
+        <item>GO</item>
+        <item>GJ</item>
+        <item>HR</item>
+        <item>HP</item>
+        <item>JK</item>
+        <item>JH</item>
+        <item>KN</item>
+        <item>KL</item>
+        <item>MP</item>
+        <item>MH</item>
+        <item>MN</item>
+        <item>MG</item>
+        <item>MZ</item>
+        <item>NG</item>
+        <item>OD</item>
+        <item>PB</item>
+        <item>RJ</item>
+        <item>SK</item>
+        <item>TN</item>
+        <item>TS</item>
+        <item>TR</item>
+        <item>UK</item>
+        <item>UP</item>
+        <item>WB</item>
+        <item>AN</item>
+        <item>CH</item>
+        <item>DN</item>
+        <item>DD</item>
+        <item>DL</item>
+        <item>LD</item>
+        <item>PY</item>
+    </string-array>
+    <string-array name="navigation_menu">
+        <item>Home</item>
+        <item>Language</item>
+        <item>Connect Wifi</item>
+        <item>Share or Receive</item>
+        <!--<item>Rate Us</item>-->
+        <item>Share App</item>
+        <item>Exit</item>
+    </string-array>
+    <string name="read_india">Read India</string>
+    <string name="hybrid_learning">Hybrid Learning</string>
+    <string name="second_chance">Second Chance</string>
+    <string name="ECE">ECE</string>
+    <string name="pratham_institute">Pratham Institute</string>
+    <string name="urbon_program">Urban programme</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="top_sheet_behavior" translatable="false">com.pratham.pradigikids.custom.topsheet.TopSheetBehavior</string>
+    <string name="switch_off_mobile_hotspot">Please switch off the mobile data and try again.</string>
+    <string name="Okay">Okay</string>
+    <string name="change">Change</string>
+    <string name="content_download_alert">Content will be downloaded in</string>
+    <string name="content_download_heading">DOWNLOAD</string>
+    <string name="nsd_servername_postfix">FTP Server</string>
+    <string name="storage_warning">Warning: storage is not available. You may want to unmount it.</string>
+    <string name="notification_server_starting">Starting at %s</string>
+    <string name="notification_title">FTP Server is running</string>
+    <string name="notification_text">at %s</string>
+    <string name="notification_stop_text">Stop Server</string>
+    <string name="notif_settings_text">Settings</string>
+    <string name="swiftp_name">FTP Server</string>
+    <string name="txt_network_error">No content found. Please check your internet connection or try to change language</string>
+    <string name="recieve_txt">Hotspot will be created to receive content</string>
+    <string name="share_txt">Connect to hotspot by scanning the QR displayed.</string>
+    <string name="exit_statement">Are you sure you want to quit?</string>
+    <string name="no_grps">No groups have been assigned for this age group.</string>
+
+    //strings for gps service
+    <string name="time_onesecond">1 second</string>
+    <string name="time_halfminute">&#189; minute</string>
+    <string name="time_oneminute">1 minute</string>
+    <string name="time_onehour">1 hour</string>
+    <string name="time_quarterhour">15 minutes</string>
+    <string name="time_halfhour">&#189; hour</string>
+    <string name="time_oneandhalfhours">1&#189; hours</string>
+    <string name="time_twoandhalfhours">2&#189; hours</string>
+    <string name="time_hms_format" formatted="false">%sh %sm %ss</string>
+    <string name="accuracy_within" formatted="false">within %s %s</string>
+    <string name="direction_roughly">Roughly %s</string>
+    <string name="direction_north">North</string>
+    <string name="direction_northnortheast">North by Northeast</string>
+    <string name="direction_northeast">Northeast</string>
+    <string name="direction_eastnortheast">East by Northeast</string>
+    <string name="direction_east">East</string>
+    <string name="direction_eastsoutheast">East by Southeast</string>
+    <string name="direction_southeast">Southeast</string>
+    <string name="direction_southsoutheast">South by Southeast</string>
+    <string name="direction_south">South</string>
+    <string name="direction_southsouthwest">South by Southwest</string>
+    <string name="direction_southwest">Southwest</string>
+    <string name="direction_westsouthwest">West by Southwest</string>
+    <string name="direction_west">West</string>
+    <string name="direction_westnorthwest">West by Northwest</string>
+    <string name="direction_northwest">Northwest</string>
+    <string name="direction_northnorthwest">North by Northwest</string>
+    <string name="unknown_direction">unknown</string>
+    <!-- general -->
+    <string name="foot">&#160;foot</string>
+    <string name="feet">&#160;feet</string>
+    <string name="meter">&#160;meter</string>
+    <string name="meters">&#160;meters</string>
+    <string name="error">Error</string>
+    <string name="error_connection">Connection Error. Please check your phone settings.</string>
+    <string name="gpsprovider_unavailable">No GPS provider available. Please check your location settings and enable a  location provider.
+    </string>
+    <string name="started">Started</string>
+    <string name="providername_gps">GPS satellites</string>
+    <string name="providername_celltower">cell towers</string>
+    <string name="not_applicable">n/a</string>
+    <string name="meters_per_second">&#160;m/s</string>
+    <string name="feet_per_second">&#160;ft/s</string>
+    <string name="miles_per_hour">&#160;mi/h</string>
+    <string name="miles">&#160;mi</string>
+    <string name="kilometers_per_hour">&#160;km/h</string>
+    <string name="kilometers">&#160;km</string>
+    <string name="seconds">&#160;s</string>
+    <string name="minutes">&#160;min</string>
+    <string name="hours">&#160;hrs</string>
+    <string name="getting_location">Please wait...</string>
+    <string-array name="programmes">
+        <item>HLearning</item>
+        <item>Second Chance</item>
+        <item>HAMARA GAON</item>
+        <item>H-Learning URBAN</item>
+        <item>KGBV</item>
+        <item>ECCE</item>
+        <item>Pratham Institute</item>
+        <item>Government Partnership</item>
+    </string-array>
+
+    <!--Video Conference-->
+    <string name="start_button">Start</string>
+    <string name="session_name">Session Name</string>
+    <string name="default_session_name">SessionA</string>
+    <string name="participant_name">Participant Name</string>
+    <string name="default_participant_name">Participant</string>
+    <string name="socket_address">URL</string>
+    <string name="default_socket_address">wss://demos.openvidu.io:4443/openvidu</string>
+    <string name="hang_up">HANG UP</string>
+    <string name="no_connection">COULDN\'T STABLISH THE CONNECTION, TRY AGAIN :)</string>
+    <string name="no_permissions_granted">We can\'t give you service without your permission</string>
+    <string name="permissions_dialog_title">We need your help</string>
+    <string name="accept_permissions_dialog">GIVE PERMISSIONS!</string>
+    <string name="cancel_dialog">CANCEL</string>
+    <string name="no_internet_connection">NO INTERNET CONNECTION:( PLEASE CHECK YOUR CONNECTION</string>
+</resources>

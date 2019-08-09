@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_card"
+    android:layout_width="@dimen/_130sdp"
+    android:layout_height="@dimen/_130sdp"
+    android:layout_weight="1"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <com.pratham.pradigikids.custom.elastic_view.ElasticView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"
+        android:clickable="true"
+        android:focusable="true"
+        android:stateListAnimator="@animator/lift_on_touch"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_8sdp"
+        app:flexibility="3">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/share_content_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:scaleType="fitXY"
+            app:actualImageScaleType="fitXY"
+            app:placeholderImage="@drawable/ic_app_logo_" />
+    </com.pratham.pradigikids.custom.elastic_view.ElasticView>
+
+    <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+        android:id="@+id/share_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight=".3"
+        android:clickable="false"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:maxLines="2"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_15sdp" />
+</LinearLayout>
+

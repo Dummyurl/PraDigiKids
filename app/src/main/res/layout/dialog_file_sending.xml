@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="@dimen/_230sdp"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/yellow_sand"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_file_trans"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/file_transfer" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/iv_file_trans">
+
+            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                android:id="@+id/dialog_file_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:gravity="center"
+                android:maxLines="3"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.pratham.pradigikids.custom.progress_layout.ProgressLayout
+                android:id="@+id/dialog_progressLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                app:c_progressRadius="@dimen/_8sdp"
+                card_view:c_borderWidth="0dp"
+                app:c_progress="23"
+                card_view:c_isShowDesc="false"
+                card_view:c_max="100"
+                card_view:c_progressColor="@color/green" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.card.MaterialCardView>

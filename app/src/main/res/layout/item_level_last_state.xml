@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_outer"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_30sdp"
+    android:background="@drawable/breadcrumd_right_bottom_round_bkgd">
+
+    <android.support.design.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_inner"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="#DAB9BD"
+        card_view:cardCornerRadius="@dimen/_15sdp"
+        card_view:cardElevation="@dimen/_3sdp">
+
+        <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+            android:id="@+id/last_level_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="#A77D82" />
+    </android.support.design.card.MaterialCardView>
+</RelativeLayout>

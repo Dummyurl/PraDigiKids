@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/yellow_sand"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="@dimen/_5sdp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp">
+
+        <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+            android:id="@+id/txt_tab_qr_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="Please enter Tab QR code."
+            android:textColor="@color/red"
+            android:textSize="@dimen/_12sdp" />
+
+        <com.pratham.pradigikids.custom.edittexts.IndieEditText
+            android:id="@+id/et_tab_qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/txt_tab_qr_code"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/qr_code_etxt_bkgd"
+            android:gravity="center"
+            android:hint="Code"
+            android:focusable="true"
+            android:inputType="textCapCharacters"
+            android:textColorHint="@color/dark_grey" />
+
+        <ImageView
+            android:id="@+id/dialog_qr_submit"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/et_tab_qr_code"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_10sdp"
+            app:srcCompat="@drawable/ic_done" />
+    </RelativeLayout>
+</android.support.design.card.MaterialCardView>

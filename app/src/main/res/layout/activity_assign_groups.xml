@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/rl_assign"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:id="@+id/assign_clear_data"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:src="@android:drawable/stat_notify_error" />
+
+            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:text="Clear Data"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Assign Groups"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25sdp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_assign"
+        android:background="#FFFFFF"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/spinner_SelectState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"
+                android:background="@drawable/gradient_spinner"
+                android:minHeight="@dimen/_40sdp"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/spinner_SelectBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_SelectState"
+                android:background="@drawable/gradient_spinner"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"
+                android:minHeight="@dimen/_40sdp"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/spinner_selectVillage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_SelectBlock"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/gradient_spinner"
+                android:layout_margin="16dp"
+                android:minHeight="@dimen/_40sdp"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutGroups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_selectVillage"
+                android:layout_margin="16dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/assignGroup1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="#cccccc"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/assignGroup2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="#cccccc"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <com.pratham.pradigikids.custom.buttons.IndieFlowerButton
+                android:id="@+id/allocateGroups"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/LinearLayoutGroups"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_200sdp"
+                android:background="@drawable/button_blue_selector"
+                android:text="Assign"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:visibility="invisible"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_network_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCE3E3"
+    android:visibility="gone">
+
+    <com.pratham.pradigikids.custom.elastic_view.ElasticView
+        android:id="@+id/btn_retry"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="?android:attr/selectableItemBackground"
+        android:stateListAnimator="@animator/lift_on_touch"
+        app:cardBackgroundColor="@color/charcoal"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:flexibility="3">
+
+        <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Retry"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp" />
+    </com.pratham.pradigikids.custom.elastic_view.ElasticView>
+
+    <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+        android:id="@+id/txt_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_retry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:text="@string/txt_network_error"
+        android:textColor="#F59284"
+        android:textSize="@dimen/_20sdp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/txt_retry"
+        android:padding="@dimen/_13sdp">
+
+        <ImageView
+            android:id="@+id/iv_baby"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_230sdp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/baby" />
+
+        <ImageView
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_220sdp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_baby"
+            android:scaleType="centerCrop"
+            android:src="@drawable/error_four" />
+
+        <ImageView
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_220sdp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_baby"
+            android:scaleType="centerCrop"
+            android:src="@drawable/error_four" />
+    </RelativeLayout>
+</RelativeLayout>

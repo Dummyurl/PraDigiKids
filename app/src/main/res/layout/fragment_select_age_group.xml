@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:background="@color/white"
+            android:padding="@dimen/_15sdp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/img_3_6_yrs" />
+
+            <com.pratham.pradigikids.custom.buttons.IndieFlowerButton
+                android:id="@+id/btn_3_6_yrs"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_blue_selector"
+                android:text="Age 3 to 6 Yrs."
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:background="@color/light_blue"
+            android:padding="@dimen/_15sdp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_30sdp"
+                app:srcCompat="@drawable/img_8_14_yrs" />
+
+            <com.pratham.pradigikids.custom.buttons.IndieFlowerButton
+                android:id="@+id/btn_8_14_yrs"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_orange_selector"
+                android:text="Age 8 to 14 Yrs."
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_admin_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:background="@drawable/ic_3d_circle_yellow_"
+            android:padding="@dimen/_8sdp"
+            app:srcCompat="@drawable/ic_crl" />
+
+        <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:text="CRL Login"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_scan_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:orientation="horizontal">
+
+        <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:text="Scan QR"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:background="@drawable/ic_3d_circle_yellow_"
+            android:padding="@dimen/_10sdp"
+            app:srcCompat="@drawable/ic_qr" />
+    </LinearLayout>
+    <!-- <com.pratham.prathamdigital.custom.buttons.IndieFlowerButton
+         android:id="@+id/btn_talk_grp"
+         android:layout_width="@dimen/_150sdp"
+         android:layout_height="@dimen/_40sdp"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="@dimen/_10sdp"
+         android:layout_marginRight="@dimen/_10sdp"
+         android:background="@drawable/button_orange_selector"
+         android:elevation="@dimen/_10sdp"
+         android:text="Let's Talk"
+         android:textColor="@color/white"
+         android:visibility="visible"
+         tools:ignore="HardcodedText" />-->
+</RelativeLayout>

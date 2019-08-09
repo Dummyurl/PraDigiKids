@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.splash.ActivitySplash">
+    <!--android:background="@drawable/splash_bg"-->
+
+    <com.pratham.pradigikids.custom.FullScreenVideoView
+        android:id="@+id/splash_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false" />
+    <!--<ImageView-->
+    <!--android:id="@+id/img_splash_light"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:rotation="@android:integer/config_mediumAnimTime"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@drawable/splash_light"-->
+    <!--tools:ignore="ContentDescription" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_pradigi"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:padding="@dimen/_60sdp"-->
+    <!--android:scaleType="centerInside"-->
+    <!--android:src="@drawable/splash_title"-->
+    <!--android:visibility="gone"-->
+    <!--tools:ignore="ContentDescription" />-->
+
+    <!--<com.richpath.RichPathView-->
+    <!--android:id="@+id/rich"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:visibility="invisible"-->
+    <!--app:vector="@drawable/ic_splash_two" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/avatar_view"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:scaleType="centerInside"
+            android:visibility="invisible"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="location.json"
+            app:lottie_loop="true" />
+
+        <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/avatar_view"
+            android:text="@string/getting_location"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7A8B5A</color>
+    <color name="green">#7A8B5A</color>
+    <color name="colorPrimaryDark">#2E3B41</color>
+    <!--//#004853-->
+    <color name="colorAccent">#b3c135</color>
+    <color name="splash_background">#F6F6F6</color>
+    <color name="toolbar_background">#37474f</color>
+    <!--//#005765-->
+    <color name="lightGrey">#d7d7db</color>
+    <color name="dark_blue">#262B4B</color>
+    <color name="blue">#00BEDE</color>
+    <color name="black_20">#90000000</color>
+    <color name="light_black">#424242</color>
+    <color name="light_blue">#bfd7e7e4</color>
+    <color name="light_pink">#E7DEDE</color>
+    <color name="ghost_white">#FAFAFC</color>
+    <color name="trans_ghost_white">#7ffafafc</color>
+    <color name="yellow_sand">#fff1b9</color>
+    <color name="red">#FF3A41</color>
+    <color name="light_green">#39b54a</color>
+    <color name="oslo_grey">#eb828786</color>
+    <color name="golden">#D8C372</color>
+    <color name="ttl_item_grey">#c1c4c6</color>
+    <color name="vanilla">#A8A1F7</color>
+    <color name="light_orange">#fba27f</color>
+    <color name="purple">#8458c1</color>
+
+    <color name="stpi_default_circle_color">#b3bdc2</color>
+    <color name="stpi_default_primary_color">#00b47c</color>
+    <color name="stpi_default_line_color">#313b49</color>
+
+    <color name="demo_light_transparent">#16000000</color>
+    <color name="demo_dark_transparent">#24000000</color>
+    <color name="lavender">#D8D2E1</color>
+    <color name="charcoal">#34435E</color>
+    <color name="trans_charcoal">#e134435e</color>
+
+    <!--//chips-->
+    <color name="chip">#333</color>
+    <color name="dark_grey">#333333</color>
+    <color name="light_grey">#bbbbbb</color>
+    <color name="white">#ffffff</color>
+    <color name="selected_color">#ffffaa</color>
+    <color name="selected_font_color">#999933</color>
+    <color name="deselected_color">#aaffaa</color>
+    <color name="deselected_font_color">#339933</color>
+    <color name="mustord_yellow">#FFE066</color>
+
+    <color name="dialog_background_color">#fafafa</color>
+    <color name="dialog_background_scrim">#99323232</color>
+
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="text_color">#575757</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+    <color name="dark_yellow">#FDBE44</color>
+
+    <color name="button">#2E96BB</color>
+    <color name="simple_white">#FFFFFF</color>
+    <color name="startColor">#59FFFFFF</color>
+    <color name="endColor">#23FFFFFF</color>
+    <color name="att_unselected">#F5FFCA75</color>
+    <color name="att_selected">#F8A306</color>
+    <color name="aks_selected">#fa7e0a</color>
+</resources>

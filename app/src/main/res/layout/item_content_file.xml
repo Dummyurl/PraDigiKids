@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_card_file"
+    android:layout_width="@dimen/_130sdp"
+    android:layout_height="@dimen/_130sdp"
+    android:background="@drawable/item_folder_rounded_corner_bkgd"
+    android:clickable="true"
+    android:focusable="true">
+
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_3sdp"
+        android:stateListAnimator="@animator/lift_on_touch"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/file_content_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/oslo_grey"
+                app:actualImageScaleType="fitXY"
+                app:placeholderImage="@mipmap/ic_launcher" />
+
+            <RelativeLayout
+                android:id="@+id/rl_download"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="@drawable/rounded_corners">
+
+                <LinearLayout
+                    android:id="@+id/rl_file_item_option"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/file_item_lottieview"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_scale=".7" />
+
+                    <ImageView
+                        android:id="@+id/img_download_content"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_3sdp"
+                        app:srcCompat="@drawable/content_download_icon" />
+                </LinearLayout>
+
+                <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                    android:id="@+id/file_content_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/rl_file_item_option"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:padding="@dimen/_2sdp"
+                    android:text="@string/download"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/item_file_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/quarter_circle"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_delete_file" />
+
+            <RelativeLayout
+                android:id="@+id/rl_reveal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/item_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_progress"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:text="@string/downloading"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_delete_reveal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Delete content ?"
+                    android:textColor="@color/dark_yellow"
+                    tools:ignore="HardcodedText" />
+
+                <com.pratham.pradigikids.custom.buttons.IndieFlowerButton
+                    android:id="@+id/file_del_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:background="@drawable/delete_item_bkgd_no"
+                    android:text="No"
+                    android:textColor="@android:color/black"
+                    tools:ignore="HardcodedText" />
+
+                <com.pratham.pradigikids.custom.buttons.IndieFlowerButton
+                    android:id="@+id/file_del_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@android:color/transparent"
+                    android:text="Yes"
+                    android:textColor="@color/dark_yellow"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.design.card.MaterialCardView>
+</RelativeLayout>

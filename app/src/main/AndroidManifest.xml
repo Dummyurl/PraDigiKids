@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pratham.pradigikids">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.UPDATE_DEVICE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission
+        android:name="android.permission.MEDIA_CONTENT_CONTROL"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.microphone" />
+    <uses-feature
+        android:name="android.software.device_admin"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-permission android:name="android.permission.USB_PERMISSION" />
+    <application
+        android:name="com.pratham.pradigikids.PrathamApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_rounded"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
+        <!--<receiver-->
+        <!--android:name=".services.connectivity.ConnectivityReceiver"-->
+        <!--android:enabled="true">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+        <!--<action android:name="android.net.wifi.WIFI_STATE_CHANGED" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<activity
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:name=".ui.conference.CnferenceAct"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:host="alpha.jitsi.net" android:scheme="https" />
+                <data android:host="beta.meet.jit.si" android:scheme="https" />
+                <data android:host="meet.jit.si" android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="org.jitsi.meet" />
+            </intent-filter>
+        </activity>-->
+        <activity
+            android:name="com.pratham.pradigikids.ui.splash.ActivitySplash_"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.pratham.pradigikids.BaseActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data
+                    android:host="www.example.com"
+                    android:pathPrefix="/gizmos"
+                    android:scheme="http" />
+                <!-- note that the leading "/" is required for pathPrefix-->
+                <!--<data-->
+                <!--android:host="www.YOUR_DOMAIN"-->
+                <!--android:scheme="https" />-->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pratham.pradigikids.ui.QRLogin.QRLogin_"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.pratham.pradigikids.BaseActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.pratham.pradigikids.ui.dashboard.ActivityMain_"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.pratham.pradigikids.BaseActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.pratham.pradigikids.ui.attendance_activity.AttendanceActivity_"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.pratham.pradigikids.BaseActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.pratham.pradigikids.ui.pdf_viewer.Activity_PdfViewer_"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.pratham.pradigikids.BaseActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.pratham.pradigikids.ui.video_player.Activity_VPlayer_"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.pratham.pradigikids.BaseActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pratham.pradigikids.BaseActivity" />
+        </activity>
+        <activity
+            android:name="com.pratham.pradigikids.ui.web_view.Activity_WebView_"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.pratham.pradigikids.BaseActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.pratham.pradigikids.ui.assign.Activity_AssignGroups_"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.pratham.pradigikids.BaseActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.pratham.pradigikids.CatchoTransparentActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.pratham.pradigikids.BaseActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e1d9330f62c878e9baee0e17b985180647272403" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name="com.pratham.pradigikids.services.auto_sync.AutoSyncService"
+            android:exported="false" />
+        <service
+            android:name="com.pratham.pradigikids.services.BkgdVideoRecordingService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.pratham.pradigikids.services.auto_sync.AutoSyncNetworkReceiver"
+            android:enabled="false"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.pratham.pradigikids.services.auto_sync.AutoSyncPowerReceiver"
+            android:enabled="false"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.pratham.pradigikids.services.auto_sync.AutoSyncBootReceiver"
+            android:enabled="false"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.pratham.pradigikids.services.auto_sync.AutoSync"
+            android:resource="@xml/autosync" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/red" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <service android:name="com.pratham.pradigikids.services.PrathamFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.pratham.pradigikids.services.PrathamFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.pratham.pradigikids.services.AppKillService"
+            android:enabled="true"
+            android:stopWithTask="false" />
+        <service android:name="com.pratham.pradigikids.ftpSettings.FsService" />
+
+        <receiver
+            android:name="com.pratham.pradigikids.ftpSettings.FsNotification"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.pratham.pradigikids.ftpSettings.ACTION_UPDATE_NOTIFICATION" />
+                <action android:name="com.pratham.pradigikids.ftpSettings.FTPSERVER_STARTED" />
+                <action android:name="com.pratham.pradigikids.ftpSettings.FTPSERVER_STOPPED" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.pratham.pradigikids.ftpSettings.NsdService" />
+
+        <receiver
+            android:name="com.pratham.pradigikids.ftpSettings.NsdService$StartStopReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.pratham.pradigikids.ftpSettings.FTPSERVER_STARTED" />
+                <action android:name="com.pratham.pradigikids.ftpSettings.FTPSERVER_STOPPED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.pratham.pradigikids.ftpSettings.RequestStartStopReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.pratham.pradigikids.ftpSettings.ACTION_START_FTPSERVER" />
+                <action android:name="com.pratham.pradigikids.ftpSettings.ACTION_STOP_FTPSERVER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.pratham.pradigikids.ftpSettings.FsTileService"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/swiftp_name"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:roundIcon="@mipmap/ic_launcher_rounded">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name="com.novoda.merlin.MerlinService"
+            android:exported="false" />
+        <service
+            android:name="com.pratham.pradigikids.gpsLogger.GpsLoggingService"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.pratham.pradigikids.gpsLogger.GpsLoggingService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.pratham.pradigikids.gpsLogger.RestarterReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name="com.pratham.pradigikids.services.OTGListener"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

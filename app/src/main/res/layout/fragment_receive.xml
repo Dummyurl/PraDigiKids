@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/shareCircle"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_centerInParent="true"
+        android:clickable="false">
+
+        <com.pratham.pradigikids.custom.CircularProgress
+            android:id="@+id/circleProgress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false" />
+
+        <com.pratham.pradigikids.custom.edittexts.IndieEditText
+            android:id="@+id/status"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:clickable="false"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.5"
+            android:textColor="@color/black_20"
+            android:textSize="@dimen/_16sdp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_hotspot_qr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/img_hotspot_qr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_40sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_40sdp"
+            app:srcCompat="@drawable/ic_qrcode_white" />
+
+        <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+            android:id="@+id/txt_scan_qr_"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="Scan the QR to connect to hotspot"
+            android:textColor="@color/dark_yellow"
+            android:textSize="@dimen/_25sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_receive_files"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="1">
+
+        <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:text="Receiving..."
+            android:textColor="@color/dark_yellow"
+            android:textSize="@dimen/_30sdp" />
+
+        <com.pratham.pradigikids.custom.GridRecyclerView
+            android:id="@+id/rv_files"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8"
+            android:clipToPadding="false"
+            android:columnWidth="@dimen/_130sdp"
+            android:layoutAnimation="@anim/grid_layout_animation_from_bottom"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</RelativeLayout>

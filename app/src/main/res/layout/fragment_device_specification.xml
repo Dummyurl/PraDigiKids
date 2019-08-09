@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pratham.pradigikids.custom.CircularRevelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/circular_import_reveal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <android.support.design.card.MaterialCardView
+                android:id="@+id/internal_card"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_weight=".5"
+                app:cardBackgroundColor="@color/red"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Internal Storage"
+                        android:textColor="@color/white" />
+
+                    <com.pratham.pradigikids.custom.number_progressbar.LineProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        app:isShowDesc="false"
+                        app:lineprogressColor="@color/white"
+                        app:progress="2"
+                        app:progressRadius="@dimen/_3sdp" />
+
+                </LinearLayout>
+            </android.support.design.card.MaterialCardView>
+
+            <android.support.design.card.MaterialCardView
+                android:id="@+id/external_card"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_weight=".5"
+                app:cardBackgroundColor="@color/dark_yellow"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="External Storage"
+                        android:textColor="@color/white" />
+
+                    <com.pratham.pradigikids.custom.number_progressbar.LineProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        app:isShowDesc="false"
+                        app:lineprogressColor="@color/white"
+                        app:progress="2"
+                        app:progressRadius="@dimen/_3sdp" />
+                </LinearLayout>
+            </android.support.design.card.MaterialCardView>
+        </LinearLayout>
+
+        <android.support.design.card.MaterialCardView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:cardBackgroundColor="@color/purple"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:cardElevation="@dimen/_5sdp">
+
+            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Import Data"
+                android:textColor="@color/white" />
+        </android.support.design.card.MaterialCardView>
+    </RelativeLayout>
+</com.pratham.pradigikids.custom.CircularRevelLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="@dimen/_230sdp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@drawable/ic_drawer_bkgd"
+    android:fitsSystemWindows="true"
+    app:headerLayout="@null"
+    app:menu="@null">
+
+    <RelativeLayout
+        android:id="@+id/rl_drawer_profile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:gravity="center">
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/drawer_profile_card"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerVertical="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_20sdp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/drawer_profile_lottie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+        </android.support.design.card.MaterialCardView>
+
+        <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+            android:id="@+id/drawer_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/drawer_profile_card"
+            android:background="@drawable/drawer_profile_round_bg"
+            android:elevation="@dimen/_5sdp"
+            android:gravity="center"
+            android:maxLines="3"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="askdalskssksdas"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_drawer_profile"
+        android:layout_margin="@dimen/_5sdp" />
+</RelativeLayout>

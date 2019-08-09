@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pratham.pradigikids.custom.CircularRevelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aks_reveal"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/aaj_play_video"
+            android:layout_width="@dimen/_44sdp"
+            android:layout_height="@dimen/_44sdp"
+            android:layout_centerInParent="true"
+            android:elevation="@dimen/_5sdp"
+            app:srcCompat="@drawable/ic_video" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:background="#530c0c">
+
+                <com.pratham.pradigikids.custom.elastic_view.ElasticView
+                    android:id="@+id/aaj_btn_skip"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    app:cardBackgroundColor="#B5614D"
+                    app:cardCornerRadius="@dimen/_15sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Skip"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp" />
+                </com.pratham.pradigikids.custom.elastic_view.ElasticView>
+
+                <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                    android:id="@+id/aaj_txt_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/aaj_btn_skip"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="हवा का घनत्व कब कम होता है ?"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_30sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:background="#8f0e0e">
+
+                <com.pratham.pradigikids.custom.elastic_view.ElasticView
+                    android:id="@+id/aaj_okay"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    app:cardBackgroundColor="#E69379"
+                    app:cardCornerRadius="@dimen/_15sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Okay"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp" />
+                </com.pratham.pradigikids.custom.elastic_view.ElasticView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <android.support.design.card.MaterialCardView
+                        android:id="@+id/card_option_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="@dimen/_20sdp"
+                        app:cardElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="1."
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15sdp" />
+
+                            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                                android:id="@+id/txt_option_one"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="जब हवा ठंडी होती है"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </android.support.design.card.MaterialCardView>
+
+                    <android.support.design.card.MaterialCardView
+                        android:id="@+id/card_option_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="@dimen/_20sdp"
+                        app:cardElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="2."
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15sdp" />
+
+                            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                                android:id="@+id/txt_option_two"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="तापमान से घनत्व में कोई परिवर्तन नहीं होता है"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </android.support.design.card.MaterialCardView>
+
+                    <android.support.design.card.MaterialCardView
+                        android:id="@+id/card_option_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="@dimen/_20sdp"
+                        app:cardElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="3."
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15sdp" />
+
+                            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                                android:id="@+id/txt_option_three"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="पता नहीं"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </android.support.design.card.MaterialCardView>
+
+                    <android.support.design.card.MaterialCardView
+                        android:id="@+id/card_option_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="@dimen/_20sdp"
+                        app:cardElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="4."
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15sdp" />
+
+                            <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+                                android:id="@+id/txt_option_four"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="जब हवा गर्म होती है"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </android.support.design.card.MaterialCardView>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/aaj_img_bulb"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerHorizontal="true"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="light_bulb.json"
+            app:lottie_loop="true" />
+
+        <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+            android:id="@+id/txt_aaj"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_toLeftOf="@+id/aaj_img_bulb"
+            android:gravity="center"
+            android:text="Aaj Ka "
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25sdp" />
+
+        <com.pratham.pradigikids.custom.textviews.IndieFlowerTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_toRightOf="@+id/aaj_img_bulb"
+            android:gravity="center"
+            android:text=" Sawal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25sdp" />
+    </RelativeLayout>
+</com.pratham.pradigikids.custom.CircularRevelLayout>

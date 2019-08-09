@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/ghost_white" />
+    <stroke
+        android:width="0dp"
+        android:color="@color/ghost_white" />
+    <padding
+        android:bottom="00dp"
+        android:left="0dp"
+        android:right="00dp"
+        android:top="0dp" />
+    <corners android:radius="5dp" />
+</shape>

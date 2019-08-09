@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "333002612554",
+    "firebase_url": "https://pradigi-kids.firebaseio.com",
+    "project_id": "pradigi-kids",
+    "storage_bucket": "pradigi-kids.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333002612554:android:054acae3eba7f8af",
+        "android_client_info": {
+          "package_name": "com.pratham.pradigikids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333002612554-5evgvbo99itvmsuhhdi627fbip1q0afu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pratham.pradigikids",
+            "certificate_hash": "be840c3fa44e68344cd9c17ed388eaf019d9aec1"
+          }
+        },
+        {
+          "client_id": "333002612554-19an1g7lk9nv8qkpm5ok8i0nv961focq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBazCPCjeYh5jqosS3-rohzWMhJewllpIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333002612554-19an1g7lk9nv8qkpm5ok8i0nv961focq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

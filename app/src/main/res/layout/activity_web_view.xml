@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.pratham.pradigikids.custom.FullScreenVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <WebView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/loadGame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<SurfaceView-->
+    <!--android:id="@+id/cameraView"-->
+    <!--android:layout_width="@dimen/_50sdp"-->
+    <!--android:layout_height="@dimen/_50sdp" />-->
+</RelativeLayout>
